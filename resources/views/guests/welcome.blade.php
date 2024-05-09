@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>I migliori film della storia</h1>
+    <h1 class="text-center py-5">I migliori film della storia</h1>
 
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-5">
@@ -12,7 +12,7 @@
                         <h3 class="card-title text-center">{{ $movie->title }}</h3>
 
                         <div class="card-body text-center">
-                            <h4>{{ $movie->original_title }}</h4>
+                            <h4>Originale title: {{ $movie->originale_title }}</h4>
                             <p>
                                 "This movies is a {{ $movie->nationality }} production"
                             </p>
